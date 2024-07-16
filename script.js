@@ -27,10 +27,11 @@ function criptografar() {
 
     document.getElementById('imgCriptografia').style.display = 'none';
     document.getElementById('mensagem').style.display = 'none';
+    document.getElementById('esconder').style.display = 'none';
     document.getElementById('textoNone').innerText = textoCriptografado;
     document.getElementById('textoNone').style.marginTop = '45px';
+    document.getElementById('textoNone').style.display = 'block';
     document.getElementById('copiar').style.display = 'block';
-
 }
 
 function descriptografar() {
@@ -45,14 +46,19 @@ function descriptografar() {
 
     document.getElementById('imgCriptografia').style.display = 'none';
     document.getElementById('mensagem').innerText = textoDescriptografado;
+    document.getElementById('mensagem').style.display = 'block';
+    document.getElementById('textoNone').style.display = 'none';
     document.getElementById('copiar').style.display = 'block';
 }
 
 function copiarTexto() {
-    const textoCriptografado = document.getElementById('mensagem').innerText;
-    navigator.clipboard.writeText(textoCriptografado);
-    
+    let textoParaCopiar = document.getElementById('textoNone').style.display === 'block' ?
+        document.getElementById('textoNone').innerText :
+        document.getElementById('mensagem').innerText;
+
+    navigator.clipboard.writeText(textoParaCopiar);
 }
+
 document.getElementById('criptografar').addEventListener('click', criptografar);
 document.getElementById('descriptografar').addEventListener('click', descriptografar);
 document.getElementById('copiar').addEventListener('click', copiarTexto);

@@ -15,6 +15,10 @@ $color-buttonInput:white;
 body{
     background-color: $background-color;
     font-size: $fonte;
+
+    button{
+        cursor: pointer;
+    }
 }
 nav{
     img{
@@ -99,6 +103,7 @@ nav{
             height: 60px;
             border-radius: 20px;
             margin-top: 30px;
+
         }
         
     }
