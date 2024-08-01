@@ -1,0 +1,48 @@
+@media screen and (max-width: 768px) {
+  nav img {
+    margin-left: 0;
+  }
+  .content {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .content .inputSide {
+    width: 100%;
+  }
+  .content .inputSide .buttonInput {
+    margin: 0;
+    justify-content: center !important;
+  }
+  .content .inputSide textarea {
+    margin: 25px 0 0 0;
+    padding-left: 20px;
+  }
+  .content .inputSide button {
+    margin-top: 15px;
+    width: 25%;
+  }
+  .content .resultSide {
+    width: 95%;
+    margin: 0;
+    margin-top: 45px;
+    height: auto;
+  }
+  .content .resultSide img {
+    display: none;
+  }
+  .content .resultSide h2 {
+    margin-top: 25px;
+  }
+  .content .resultSide p {
+    padding-bottom: 35px;
+  }
+  .content .resultSide button {
+    margin-bottom: 35px;
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 583px) {
+  button {
+    width: 95% !important;
+  }
+}/*# sourceMappingURL=media.css.map */

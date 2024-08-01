@@ -1,11 +1,5 @@
-$background-color:rgb(233	236	248);
-$fonte: 1rem;
-$fonte-textarea:1.5rem;
-$descriptografar-cor:rgb(216 223 232);
-$botao-fundo:rgb(10 56	113);
-$resultSide-background:rgb(255, 255, 255);
-$textarea-back: transparent;
-$color-buttonInput:white; 
+@import "./imports/var.scss";
+@import "./imports/media.scss";
 
 *{
     margin: 0;
@@ -15,11 +9,8 @@ $color-buttonInput:white;
 body{
     background-color: $background-color;
     font-size: $fonte;
-
-    button{
-        cursor: pointer;
-    }
 }
+
 nav{
     img{
         height: 35px;
@@ -103,65 +94,7 @@ nav{
             height: 60px;
             border-radius: 20px;
             margin-top: 30px;
-
         }
         
-    }
-}
-
-@media screen and (max-width: 768px){
-
-    nav{
-        img{
-            margin-left: 0;
-        }
-    }
-
-    .content{
-        flex-direction: column;
-        justify-content: center;
-        .inputSide{
-            width: 100%;
-            .buttonInput{
-                margin: 0;
-                justify-content: center !important;
-            }
-            textarea{
-                margin: 25px 0 0 0;
-                padding-left: 20px;
-            }
-            button{
-                margin-top: 15px;
-                width: 25%;
-            }
-        }
-        .resultSide{
-            width: 95%;
-            margin: 0;
-            margin-top: 45px;
-            height: auto;
-            img{
-                display: none;
-            }
-
-            h2{
-                margin-top: 25px;
-            }
-
-            p{
-                padding-bottom: 35px;
-            }
-
-            button{
-                margin-bottom: 35px;
-                margin-top: 0;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 583px){
-    button{
-        width: 95% !important;
     }
 }
